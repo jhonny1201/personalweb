@@ -1,0 +1,32 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="my_jumbotron">
+      <div class="container">
+        <h1 class="display-3">Hola a todos</h1>
+        <p style="text-align: justify;">Bienvenidos a mí sitio web personal. Este website tiene como principal objetivo
+           dar a conocer mis aptitudes, mis gustos, en fin todo <a href="{% url 'about' %}">acerca de mí</a>
+           como desarrollador web junior.</p>
+        <p>
+          Con el fin de no hacer un sitio web tan estático quize añadir un <a class="link" href="{% url 'blog' %}">blog</a> para poner en práctica
+          mis conocimientos como desarrollador backend en  python. En el blog podran interactuar un poco 
+          con el servidor, enviando y obteniendo información del mismo. en dicho blog hay varias categorias relacionadas a la 
+          programación como python, java, entre otras. Se puede decir que este blog actua como otro website ya que el mismo contiene
+          varias páginas web, para cada categoria y para cada públicación. Las personas que esten registradas tendran la posibilidad 
+          de agregar públicaciones, relacionadas a las categorias, al blog, es decir, que si Alejandra, por ejemplo, esta registrada 
+          podrá agregar algún, tema que le parezca interesante, al blog. pero si Alejandra no está registrada solamente tendrá la 
+          posibilidad de observar cada una de las categorias y públicaciones que hay en el blog.
+        </p>
+        <p>
+          Como ningun proyecto es perfecto, y además soy un desarrollador junior, hay una página de contacto en donde podran enviarme
+          a mi correo cualquier sugerencia o consejo, que crean podria ayudarme a mejorar mi sitio web o en mi crecimiento personal y 
+          y profesional.
+        </p>
+        <p>
+          Cabe mencionar que en un futuro planeo agragar una nueva página, portafolio, en donde estaría públicando cada uno de mis 
+          proyectos.
+        </p>
+      </div>
+    </div>  
+{% endblock %}
